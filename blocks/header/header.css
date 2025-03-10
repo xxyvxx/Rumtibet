@@ -1,0 +1,271 @@
+.header{
+    max-height: 985px;
+    background-image: url(../../images/imageHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 82px;
+    padding-left: 16px;
+    padding-right: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__nav{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__list-nav{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin-left: auto;
+    margin-right: 49px;
+}
+
+.header__title-cont{
+    max-width: 1180px;
+    margin: 0 auto;
+    
+}
+
+.header__title{
+    max-width: 1080px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 460px;
+}
+
+.header__book{
+    border-radius: 10px;
+    max-width: 1180px;
+    min-height: 81px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.header__book-help{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: #fdfdfd;
+    padding: 0 8px;
+    margin: 0;
+}
+
+
+.header__book-menu{
+    background: transparent;
+    -webkit-appearance: none;
+    width: 279px;
+    min-height: 52px;
+    padding: 0px 16px;
+    border: 1px solid #e1e3e4;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #fdfdfd;
+
+}
+
+.header__book-menu:focus{
+    outline: none;
+}
+
+.header__book-menu option:not(:first-child){
+    background-color: #495D67;
+}
+
+.header__book-date{
+    background: transparent;
+    -webkit-appearance: none;
+    width: 279px;
+    min-height: 52px;
+    padding: 0px 16px;
+    border: 1px solid #e1e3e4;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #fdfdfd;
+}
+
+.header__book-date:focus{
+    outline: none;
+}
+
+.header__book-date::placeholder{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #fdfdfd;
+}
+
+.header__book-button{
+    background: #fdfdfd;
+    color: #1A3E3E;
+    padding: 16px 36px;
+}
+
+.header__hamburger {
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer; 
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    z-index: 100
+}
+
+.bar {
+    width: 30px; 
+    height: 3px; 
+    background-color: #fff; 
+    margin: 4px 0; 
+}
+
+.bar:last-child{
+    width: 50%;
+    margin-left: auto;
+}
+
+.header__book-button-mobile{
+    background: #fdfdfd;
+    color: #1A3E3E;
+    padding: 16px 36px;
+    display: none; 
+}
+
+.header__hamburger.is-active .bar:first-child{
+    rotate: 45deg;
+    transform-origin: 0;
+    translate: 5.1px 0.7px;
+}
+
+.header__hamburger.is-active .bar:nth-child(2){
+    rotate: -45deg;
+}
+
+.header__hamburger.is-active .bar:last-child{
+    width: 0;
+}
+
+.header__drop-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1A3E3E;
+    z-index: 1;
+    min-width: 300px;
+    display: none;
+}
+
+.header__drop-menu.is-open{
+    display: block;
+}
+
+.header__drop-menu ul{
+    top: 80px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 75px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.header__row-right{
+    margin-right: 8px;
+}
+
+
+@media screen and (width <= 1100px) {
+    .header{
+        max-height: 800px;
+        padding-bottom: 60px;
+    }
+
+    .header__title{
+        padding-top: 260px;
+    }
+
+    .header__list-nav {
+        display: none; 
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .header__hamburger {
+        display: flex; 
+    }
+
+    .header__book{
+        display: none;
+    }
+
+    .header__book-button-mobile{
+        display: flex;
+    }
+
+    
+    .header__drop-menu .header__link{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width <= 391px) {
+    .header{
+        max-width: 600px;
+        padding-bottom: 50px;
+    }
+
+    .header__title{
+        padding-top: 230px;
+    }
+
+
+    .header__logo{
+        width: 84px;
+        height: 44px;
+    }
+
+    .header__drop-menu{
+        min-width: 200px;
+    }
+
+    .header__drop-menu .header__link{
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (width <= 286px) {
+    .header__title{
+        font-size: 1.2rem;
+    }
+}

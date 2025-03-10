@@ -1,0 +1,150 @@
+.about{
+    min-height: 726px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.about__cont{
+    max-width: 1180px;
+    min-height: 526px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 120px;
+}
+
+.about__photo{
+    min-width: 480px;
+    min-height: 526px;
+    position: relative;
+}
+
+.about__image{
+    width: 350px; 
+    height: 400px;
+}
+
+.about__photo:first-child{
+    position: relative;
+}
+
+.second{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.about__text{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #18121e;
+}
+
+
+@media screen and (width <= 1041px) {
+    .about__cont{
+        column-gap: 70px;
+    }
+
+    .about__image{
+        width: 300px;
+        height: 350px;
+    }
+
+    .about__photo{
+        min-width: 420px;
+    }
+}
+
+@media screen and (width <= 811px) {
+    .about__cont{
+        column-gap: 45px;
+    }
+
+    .about__image{
+        width: 250px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (width <= 745px) {
+    .about__cont{
+        max-width: 750px;
+        flex-direction: column-reverse;
+        row-gap: 50px;
+        padding-top: 30px;
+    }
+
+    .about__photo{
+        min-height: auto;
+        min-width: auto;
+    }
+
+    .about__image{
+        width: 300px;
+        height: 350px;
+    }
+
+    .second{
+        position: relative;
+    }
+
+    .about__text{
+        font-size: 16px;
+    }
+
+    .about__description{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about__button{
+        align-self: center;
+    }
+}
+
+@media screen and (width <= 621px) {
+
+    .about__image{
+        width: 240px;
+        height: 290px;
+    }
+
+}
+
+@media screen and (width <= 511px) {
+
+    .about__image{
+        width: 190px;
+        height: 240px;
+    }
+
+}
+
+@media screen and (width <= 411px) {
+
+    .first{
+        display: none;
+    }
+
+    .about__image{
+        width: 100%; /* Ширина изображений 100% от родительского блока */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about__photo{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+

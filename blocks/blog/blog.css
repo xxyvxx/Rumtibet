@@ -1,0 +1,153 @@
+.blog{
+    min-height: 996px;
+    background-color: #F3F5F4;
+    padding: 20px 5px;
+    overflow: hidden;
+}
+
+.blog__text{
+    max-width: 580px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.blog__cont-button{
+    max-width: 225px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.blog__cont{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 24px;
+    overflow-x: auto;
+}
+
+.blog__card{
+    min-width: 548px;
+    padding: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FDFDFD;
+    display: flex;
+    column-gap: 20px;
+}
+
+.blog__card-image{
+    width: 230px;
+    height: 280px;
+    border-radius: 6px;
+}
+
+.blog__card-description{
+    max-width: 294px;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__card-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    color: #18121e;
+}
+
+.blog__card-title:hover{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #1a3e3e;
+}
+
+.blog__card-text{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 143%;
+    color: #18121e;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.blod__card-date{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #f2be22;
+    padding: 0;
+    margin: 0;
+}
+
+.blog__card-link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #1a3e3e;
+}
+
+.blog__card-link:hover{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #1a3e3e;
+}
+
+.blog__card-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+@media screen and (width <= 1190px) {
+    
+    .blog__cont{
+        max-width: 591px;
+    }
+
+    .blog__card{
+        padding: 0;
+        flex-direction: column;
+        min-width: 285px;
+        row-gap: 16px;
+    }
+
+    .blog__card-title{
+        font-size: 1.25rem;
+        line-height: 130%;
+    }
+
+    .blog__card-description{
+        max-width: 252px;
+        min-height: 200px;
+        padding: 0 16px;
+        padding-bottom: 16px;
+    }
+
+    .blog__card-text{
+        margin-top: 16px;
+    }
+
+    .blog__card-image{
+        width: 100%;
+    }
+}
+
+@media screen and (width <= 600px) {
+    
+    .blog__cont{
+        max-width: 600px;
+        flex-wrap: nowrap;
+    }
+
+    .blog{
+        min-height: 780px;
+    }
+    
+}

@@ -1,0 +1,152 @@
+.photo{
+    min-height: 1006px;
+    background-color: #fff;
+    padding: 20px 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.photo__text{
+    max-width: 580px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.photo__cont-button{
+    max-width: 178px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.photo__cont{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.span{
+    grid-column: span 2;
+}
+
+
+.photo__form{
+    max-width: 1080px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+    background: #fdfdfd;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.photo__form-cont{
+    max-width: 550px;
+}
+
+.photo__form-cont-text{
+    max-width: 380px;
+}
+
+.photo__form-title{
+    font-size: 18px;
+    line-height: 111%;
+}
+
+.photo__form-subtitle{
+    font-size: 26px;
+    line-height: 120%;
+}
+
+.photo__form-text-mail{
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.photo__form-text{
+    font-size: 14px;
+    line-height: 129%;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.photo__form-text a{
+    font-size: 14px;
+    line-height: 129%;
+    color: #18121e;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.photo__form-input{
+    width: 280px;
+    height: 44px;
+    background: #f3f5f4;
+    border: none;
+    border-radius: 5px;
+}
+
+.photo__form-cont-input{
+    display: flex;
+    column-gap: 16px;
+}
+
+@media screen and (width <= 1190px) {
+    .photo__cont{
+        grid-template-columns: repeat(2, 280px);
+    }
+
+    .photo__image:nth-child(4){
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+}
+
+@media screen and (width <= 600px) {
+
+    .photo__cont{
+        display: flex;
+        overflow-x: auto;
+        justify-content: left;
+    }
+
+    .photo{
+        min-height: 820px;
+    }
+    
+
+    .span{
+        width: 280px;
+        object-fit: cover;
+    }
+    
+}
+
+@media screen and (width <= 597px) {
+    .photo__form{
+        max-width: 600px;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .photo__form-cont-input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .photo__form-input{
+        width: 240px;
+    }
+}

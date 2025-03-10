@@ -1,0 +1,211 @@
+.popular{
+    min-height: 860px;
+    background-color: #fff;
+    padding: 20px 5px;
+    overflow: hidden;
+}
+
+.popular__text{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.popular__subtitle{
+    margin: 0;
+}
+
+.popular__cont{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 20px;
+    overflow-x: scroll;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.popular__card{
+    min-height: 500px;
+    min-width: 380px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular__card-first{
+    background-image: url(../../images/card\ photo\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popular__card-second{
+    background-image: url(../../images/card\ photo\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popular__card-third{
+    background-image: url(../../images/card\ photo\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popular__star{
+    min-width: 65px;
+    max-height: 32px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+}
+
+.popular__card-bottom{
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    min-height: 90px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: min-height 0.3s ease;
+}
+
+.popular__card-bottom-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popular__card-bottom-text{
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #fdfdfd;
+}
+
+.popular__card-bottom-button{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.popular__card:hover .popular__card-bottom{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transition: min-height 0.3s ease;
+}
+
+.popular__card:hover .popular__card-bottom-text{
+    display: block;
+    max-width: 319px;
+}
+
+.popular__card:hover .popular__card-bottom-button{
+    display: block;
+    padding: 12px 24px;
+}
+
+.popular__card:hover .popular__card-bottom-cont{
+    justify-content: space-between;
+    gap: 35px
+}
+
+
+
+
+.popular__cart-subtitle{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fdfdfd;
+}
+
+.popular__card-cost{
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.popular__cost{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fdfdfd;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+
+.popular__cont-button{
+    margin: 0 auto;
+    max-width: 219px;
+}
+
+@media screen and (width <= 390px){
+    .popular__card{
+        min-height: 400px;
+        min-width: 285px;
+    }
+
+    .popular__card-title{
+        font-size: 1.125rem;
+    }
+
+    .popular__cost{
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .popular__cart-subtitle{
+        display: none;
+    }
+
+    .popular__card-bottom{
+        min-height: 70px;
+    }
+
+    .popular__card-bottom-text{
+        font-size: 0.8rem;
+    }
+
+    .popular__card:hover .popular__card-bottom-text{
+        max-width: 250px;
+    }
+
+    .popular__card:hover .popular__card-bottom{
+        min-height: 350px;
+    }
+
+    .popular{
+        min-height: 700px;
+    }
+    
+}
